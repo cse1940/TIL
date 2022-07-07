@@ -14,8 +14,6 @@
 
 
 
-
-
 ## GIT
 
 - '분산버전관리시스템'
@@ -26,12 +24,21 @@
 1. 작업을 하고
 2. 변경된 파일을 모아 (add)
 3. 버전으로 남긴다. (commit)
+   - commit : 의미있는 저장 (SW 반드시 작동가능한 상태)
 
 
 
 - modified : 파일이 수정됐음
 - staged : 수정한 파일을 곧 커밋할 것임
 - committed : 커밋이 되었음
+
+
+
+- 예시 )
+  1. 보고서 파일 새로 만듦 => untracked
+  2. 보고서 파일 add => staged
+  3. commit => unmodified
+  4. 보고서 수정 => modified
 
 
 
@@ -71,6 +78,7 @@
 
 ``` bash
 $ git remote add origin https://github.com/cse1940/TIL
+$ git push -u origin master
 ```
 
 - 활용 명령어 :
