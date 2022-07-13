@@ -1,4 +1,4 @@
-word=input("단어입력:")
+word=input()
 print(word[0])
 print(word[1])
 print(word[2])

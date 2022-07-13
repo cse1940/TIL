@@ -1,3 +1,3 @@
 number1, number2 = input().split()
-print(number1)
-print(number2)
+print(int(number1))
+print(int(number2))
