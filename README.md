@@ -1,4 +1,4 @@
-#### 💙 CHOI SEUNG EUN 
+#### CHOI SEUNG EUN 😎
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=cse1940)](https://github.com/cse1940/github-readme-stats)
 
