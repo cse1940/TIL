@@ -1,13 +1,6 @@
-## 🔖 What I learned today ⁉️
+#### 💙 CHOI SEUNG EUN 
 
-#### 2022 - 07
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=cse1940)](https://github.com/cse1940/github-readme-stats)
 
-| Sun  |                             Mon                              |                             Tue                              |                          Wed                           |                            Thu                            |                             Fri                              | Sat  |
-| :--: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------------: | :--: |
-|      |                                                              |                                                              |                                                        |                                                           |                              1                               |  2   |
-|  3   | [4](https://github.com/cse1940/TIL/blob/master/마크다운%20문법.md) | [5](https://github.com/cse1940/TIL/blob/master/마크다운%20실습.md) | [6](https://github.com/cse1940/TIL/blob/master/git.md) | [7](https://github.com/cse1940/TIL/blob/master/branch.md) | [8](https://github.com/cse1940/job-research/blob/master/job-research.md) |  9   |
-|  10  |                              11                              |                              12                              |                           13                           |                            14                             |                              15                              |  16  |
-|  17  |                              18                              |                              19                              |                           20                           |                            21                             |                              22                              |  23  |
-|  24  |                              25                              |                              26                              |                           27                           |                            28                             |                              29                              |  30  |
-|  31  |                                                              |                                                              |                                                        |                                                           |                                                              |      |
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=se1940)](http://solved.ac/se1940/)
 
