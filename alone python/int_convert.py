@@ -1,3 +1,4 @@
+# int() 함수 활용하기
 string_a = input("입력a: ")
 int_a = int(string_a)
 

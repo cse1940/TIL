@@ -1,3 +1,4 @@
+# int() 함수와 float() 함수 활용하기
 output_a = int("52")
 output_b = float("52.273")
 

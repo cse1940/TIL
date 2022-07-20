@@ -1,3 +1,4 @@
+# int() 함수와 float() 함수 조합하기
 input_a = float(input("첫 번째 숫자: "))
 input_b = float(input("두 번째 숫자: "))
 
