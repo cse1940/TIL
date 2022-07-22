@@ -9,6 +9,3 @@ for items in list_of_list:
     for item in items:
         print(items)
 
-numbers = [123, 12, 1]
-for number in numbers:
-    print(f"{number}는 {len(str(number))} 자릿수입니다.")

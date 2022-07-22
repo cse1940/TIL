@@ -8,3 +8,4 @@ for number in numbers:
     if number < 10:
         continue
     print(number)
+

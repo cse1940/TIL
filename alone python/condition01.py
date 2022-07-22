@@ -1,8 +1,8 @@
 # 입력을 받습니다.
-number = input("정수 입력: ")
+number = input("정수 입력: ") # 273(str)
 
 # 마지막 자리 숫자를 추출
-last_char = number[-1]
+last_char = number[-1] # 3
 
 # 숫자로 변환하기
 last_number = int(last_char)

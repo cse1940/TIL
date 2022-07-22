@@ -11,5 +11,5 @@ print()
 
 # 리스트 중간에 요소 추가하기
 print("# 리스트 중간에 요소 추가하기")
-list_a.insert(0,10)
+list_a.insert(0,10) # 0번째 위치에 10을 삽입
 print(list_a)

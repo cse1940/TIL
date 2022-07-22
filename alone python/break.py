@@ -9,6 +9,6 @@ while True:
     i = i + 1
     # 반복을 종료합니다.
     input_text = input("종료하시겠습니까?(y/n): ")
-    if input_text == 'y' or input_text == 'Y':
+    if input_text == 'y' or input_text == 'Y':  # if input_text in ["Y", "y"]:
         print("반복을 종료합니다.")
         break
