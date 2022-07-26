@@ -1,5 +1,6 @@
-a, b = map(int, input().split())
-
-c = a + b
-while (a, b) != (0, 0):
-    print(c)
+while True:
+    a, b = map(int, input().split())
+    if a == 0 and b == 0:
+        break
+    else:
+        print(a+b)
