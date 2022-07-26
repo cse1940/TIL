@@ -1,20 +1,8 @@
-a = int(input())
-b = int(input())
-c = int(input())
+a = int(input()) # 150
+b = int(input()) # 266
+c = int(input()) # 427
 
-ds = a * b * c
-counter = {
-    "1": 0,
-    "2": 0,
-    "3": 0,
-    "4": 0,
-    "5": 0,
-    "6": 0,
-    "7": 0,
-    "8": 0,
-    "9": 0
-}
-for d in range(ds):
-    counter[d] += 1
-for key in counter:
-    print(f"{counter[key]}\t")
+result = list(str(a * b * c))
+
+for i in range(10):
+    print(result.count(str(i)))
