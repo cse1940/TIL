@@ -4,7 +4,7 @@ import random
 # 간단한 한글 리스트를 만듭니다.
 hanguls = list("가나다라마바사아자차카타파하")
 # 파일을 쓰기 모드로 엽니다.
-with open("info.txt", "w", UTF-8) as file:
+with open("info.txt", "w") as file:
     for i in range(1000):
         # 랜덤한 값으로 변수를 생성합니다.
         name = random.choice(hanguls) + random.choice(hanguls)
