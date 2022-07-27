@@ -1,0 +1,2 @@
+alpha = input().upper()
+
