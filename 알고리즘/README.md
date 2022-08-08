@@ -314,8 +314,6 @@ for i in range(n):
         rotated_matrix[i][j]= matrix[n - j -1][i]
 ```
 
-
-
 ## 완전탐색 I
 
 ### 1. 무식하게 다해보기(Brute-force)
