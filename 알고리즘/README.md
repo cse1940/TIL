@@ -1,3 +1,136 @@
+## 이차원 리스트
+
+### 1. 이차원 리스트
+
+- ```리스트를 원소로 가지는 리스트```일 뿐
+
+```python
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+print(matrix[0])
+print(matrix[1])
+print(matrix[2])
+print(matrix[0][0])
+print(matrix[1][2])
+print(matrix[2][0])
+```
+
+- 이차원 리스트는 ```행렬(matrix)```임
+
+```python
+# 보기 좋게 변경하면 행렬(matrix)의 형태가 나옴
+matrix = [
+    [1, 2, 3],
+    [4, 5 ,6],
+    [7, 8, 9]
+]
+print(matrix[1][2])
+```
+
+- 특정 값으로 초기화 된 이차원 리스트 만들기
+
+1. 직접 작성(4 * 3 행렬)
+
+```python
+matrix1 = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
+
+matrix2 = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+]
+```
+
+             2. 반복문으로 작성(100 * 100 행렬)
+
+```python
+matrix = []
+
+for _ in range(100):
+    matrix.append([0] * 100)
+```
+
+2. 반복문으로 작성(n * m 행렬)
+
+```python
+n = 4 # 행
+m = 3 # 열
+matrix = []
+
+for _ in range(n):
+    matrix.append([0] * m)
+
+print(matrix)
+```
+
+3. 리스트 컴프리헨션으로 작성(n * m 행렬)
+
+```python
+n = 4 # 행
+m = 3 # 열
+matrix = [[0] * m for _ in range(n)]
+print(matrix)
+```
+
+[주의] 리스트 컴프리헨션 vs 리스트 곱셈 연산
+
+```python
+n = 4 # 행
+m = 3 # 열
+
+matrix1 = [[0] * m for _ in range(n)]
+matrix2 = [[0] * m] * n
+
+# 원소 값 변경을 꼭 해줘야 함
+matrix1[0][0] = 1
+matrix2[0][0] = 1
+
+print(matrix1)
+print(matrix2)
+```
+
+### 2. 입력받기
+
+1. 행렬의 크기가 미리 주어지는 경우
+
+```python
+matrix = []
+
+# input 함수가 한 줄을 입력 받기 때문에 열의 크기는 사용되지 않음
+for _ in range(8):
+    line = list(input())
+    matrix.append(line)
+    
+# 리스트 컴프리헨션을 통해 이차원 리스트의 입력을 간단히 받을 수 있음
+matrix = [list(input()) for _ in range(8)]
+
+# 3 * 3 크기의 입력을 받아보자.
+matrix = []
+
+for _ in range(3):
+    line = list(map(int, input().split()))
+    matrix.append(line)
+```
+
+2. 행렬의 크기가 입력으로 주어지는 경우
+
+```python
+n, m = map(int, input().split())
+matrix = []
+
+for _ in range(n):
+    line = list(map(int, input().split()))
+    matrix.append(line)
+    
+# 리스트 컴프리헨션을 통해 이차원 리스트의 입력을 간단히 받을 수 있음
+matrix = [list(map(int, input().split())) for _ in range(n)]
+```
+
+
+
+
+
 ## 완전탐색 I
 
 ### 1. 무식하게 다해보기(Brute-force)
@@ -29,7 +162,7 @@ def blackjack(n, m, cards):
                 # 합과 m이 같으면 더 이상 탐색하는 의미가 없으므로 종료
                 if total == m:
                     return total
-      return max_total
+     return max_total
 ```
 
 ### 2. 델타 탐색(Delta Search)
