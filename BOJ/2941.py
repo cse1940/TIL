@@ -1,7 +1,8 @@
 croatia = ["c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="]
 
-count = 0
+
 word = input()
 for i in croatia:
-   count += 1
-print(count)
+    word = word.replace(i, "*") # input 변수와 동일한 이름의 변수
+print(len(word))
+   
