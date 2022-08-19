@@ -55,3 +55,83 @@
   2. SELECT : 저장되어 있는 데이터 조회
   3. UPDATE : 저장되어 있는 데이터 갱신
   4. DELETE : 저장되어 있는 데이터 삭제
+
+## WHERE
+
+- 특정 조건으로 데이터 조회하기
+
+```sql
+SELECT * FROM 테이블이름 WHERE 조건;
+
+ex1) users 테이블에서 age가 30 이상인 유저의 모든 컬럼 정보를 조회하려면?
+SELECT * FROM users WHERE age >= 30;
+
+ex2) users 테이블에서 age가 30 이상, 성이 '김'인 사람의 나이와 이름만 조회하려면?
+SELECT agem first_name FROM users WHERE age >= 30 AND last_name = '김';
+```
+
+- WEHER절에서 사용할 수 있는 연산자
+
+  - 비교 연산자 : =, >, >=, <, <= 등
+
+  - 논리 연산자
+    - AND : 앞에 있는 조건과 뒤에 오는 조건이 모두 참인 경우
+    - OR : 앞의 조건이나 뒤의 조건이 참인 경우
+    - NOT : 뒤에 오는 조건의 결과를 반대로
+
+- SQL 사용할 수 있는 연산자
+
+  - BETWEEN 값1 AND 값2
+
+    : 값1과 값2 사이의 비교 (값1 <= 비교값 <= 값2)
+
+  - IN (값1, 값2, ...)
+
+    : 목록 중에 값이 하나라도 일치하면 성공
+
+  - LIKE 
+
+    : 와일드카드(% : 0개 이상 문자, _ : 1개 단일 문자)
+
+  - IS NULL / IS NOT NULL
+
+    : NULL 여부를 확인할 때는 항상 = 대신에 IS 활용
+
+  - 부정 연연산자
+
+    : 같지 않다 (!=, ^=, <>)
+
+      ~와 같지 않다 (NOT 칼럼명 =)
+
+      ~보다 크지 않다 (NOT 칼럼명 >)
+
+- 연산자 우선순위
+  1. ()
+  2. NOT
+  3. 비교 연산자, SQL
+  4. AND
+  5. OR
+
+## SQLite 집계 함수
+
+- SELECT 구문에서만 사용됨
+- COUNT : 그룹의 항목 수를 가져옴
+- AVG : 모든 값의 평균을 계산
+- MAX : 그룹에 있는 모든 값의 최대값을 가져옴
+- MIN : 그룹에 있는 모든 값의 최소값을 가져옴
+- SUM : 모든 값의 합을 계산
+
+```sql
+ex1) users 테이블의 레코드 총 개수를 조회한다면?
+SELECT COUNT(*) FROM users;
+
+ex2) 30살 이상인 사람들의 평균 나이는?
+SELECT AVG(age) FROM users WHERE age >= 30;
+
+ex3) 계좌 잔액(balance)이 가장 높은 사람과 그 액수를 조회하려면?
+SELECT first_name, MAX(balance) FROM users;
+
+ex4) 나이가 30이상인 사람의 계좌 평균 잔액을 조회하려면?
+SELECT AVG(balance) FROM users WHERE age >= 30;
+```
+
