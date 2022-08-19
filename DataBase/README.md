@@ -1,144 +1,57 @@
-# 사전 설정
+## DataBase
 
-## 실행
+- DB는 ```체계화된 데이터```의 모임
+- 몇 개의 자료 파일을 조직적으로 통합하여 자료 항목의 중복을 없애고 자료를 구조화하여 기억시켜 놓은 자료의 집합체
 
-```bash
-$ sqlite3 healthcare.sqlite3 
-```
+- DB로 인해 얻는 장점들
+  1. 중복 최소화
+  2. 무결성 (정확한 정보를 보장)
+  3. 일관성
+  4. 독립성 (물리적 / 논리적)
+  5. 표준화
+  6. 보안 유지
 
-## Column 출력 설정
+## RDB (관계형 DB)
 
-```sql
-sqlite3> .headers on 
-sqlite3> .mode column
-```
+- 서로 관련된 데이터를 저장하고 접근할 수 있는 DB 유형
 
-## table 및 스키마 조회
+- 키와 값들의 간단한 관계를 표 형태로 정리한 DB
 
-```sql
-sqlite3> .tables
-healthcare
+- 스키마 (schema)
 
-sqlite3> .schema healthcare
-CREATE TABLE healthcare (
-id PRIMARY KEY,        
-sido INTEGER NOT NULL, 
-gender INTEGER NOT NULL,
-age INTEGER NOT NULL,  
-height INTEGER NOT NULL,
-weight INTEGER NOT NULL,
-waist REAL NOT NULL,   
-va_left REAL NOT NULL, 
-va_right REAL NOT NULL,
+  : 데이터베이스에서 자료의 구조, 표현방법, 관계 등 전반적인 ```명세를 기술```한 것
 
-blood_pressure INTEGER 
-NOT NULL,
-smoking INTEGER NOT NULL,
-is_drinking BOOLEAN NOT NULL
-);
-```
+- 테이블 (table)
 
-# 문제
+  : 열(컬럼 / 필드)과 행(레코드 / 값)의 모델을 사용해 조직된 데이터 요소들의 집합
 
-### 1. 추가되어 있는 모든 데이터의 수를 출력하시오.
+  - 열(column) : 각 열에 고유한 데이터 형식 지정
+  - 행(row) : 실제 데이터가 저장되는 형태 
+  - 기본키(primary key) : 각 행(레코드)의 고유 값, 반드시 설정해야 함
 
-```sql
-SELECT COUNT(*) FROM healthcare;
-```
+## RDBMS (관계형 DB 관리 시스템)
 
-```
-COUNT(*)
---------
-1000000
-```
+- SQLite 
 
-### 2. 나이 그룹이 10(age)미만인 사람의 수를 출력하시오.
+  : 비교적 가벼운 데이터베이스
 
-```sql
-SELECT COUNT(*) FROM healthcare WHERE age < 10;
-```
+    오픈소스이기 때문에 자유롭게 사용가능
 
-```
-COUNT(*)
---------
-156277
-```
+## SQL
 
-### 3. 성별이 1인 사람의 수를 출력하시오.
+- 관계형 데이터베이스 관리시스템의 ```데이터 관리```를 위해 설계된 특수 목적으로 프로그래밍 언어
+- 데이터베이스 스키마 생성 및 수정
+- 자료의 검색 및 관리
+- 데이터베이스 객체 접근 조정 관리
 
-```sql
-SELECT COUNT(*) FROM healthcare WHERE gender = 1;
-```
+|          분류          |                         개념                          |              예시               |
+| :--------------------: | :---------------------------------------------------: | :-----------------------------: |
+| DDL - 데이터 정의 언어 | 관계형 DB 구조(테이블, 스키마)를 정의하기 위한 명령어 |       CREATE, DROP, ALTER       |
+| DML - 데이터 조작 언어 | 데이터를 저장, 조회, 수정, 삭제 등을 하기 위한 명령어 | INSERT, SELECT, UPDATE, DELETE  |
+| DCL - 데이터 제어 언어 |     DB 사용자의 권한 제어를 위해 사용하는 명령어      | GRANT, REVOKE, COMMIT, ROLLBACK |
 
-```
-COUNT(*)
---------
-510689
-```
-
-### 4. 흡연 수치(smoking)가 3이면서 음주(is_drinking)가 1인 사람의 수를 출력하시오.
-
-```sql
-SELECT COUNT(*) FROM healthcare WHERE smoking = 3 and is_drinking = 1;
-```
-
-```
-COUNT(*)
---------
-150361
-```
-
-### 5. 양쪽 시력이(va_left, va_right) 모두 2.0이상인 사람의 수를 출력하시오.
-
-```sql
-SELECT COUNT(*) FROM healthcare WHERE va_left >= 2.0 and va_right >= 2.0;
-```
-
-```
-COUNT(*)
---------
-2614
-```
-
-### 6. 시도(sido)를 모두 중복 없이 출력하시오.
-
-```sql
-SELECT DISTINCT sido FROM healthcare;
-```
-
-```
-sido
-----
-36
-27
-11
-31
-41
-44
-48
-30
-42
-43
-46
-28
-26
-47
-45
-29
-49
-```
-
-### 자유롭게 조합해서 원하는 데이터를 출력해보세요.
-
-> 키가 160 이상이며 여자인 사람의 수를 출력하세요.
-
-```
-SELECT COUNT(*) FROM healthcare WHERE height >= 160 and gender = 2;
-```
-
-```
-COUNT(*)
---------
-143994
-```
-
+- SQL 키워드
+  1. INSERT : 새로운 데이터 삽입
+  2. SELECT : 저장되어 있는 데이터 조회
+  3. UPDATE : 저장되어 있는 데이터 갱신
+  4. DELETE : 저장되어 있는 데이터 삭제
