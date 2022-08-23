@@ -31,7 +31,7 @@ INSERT INTO articles VALUES
     (2, '2번글', '222', 2),
     (3, '3번글', '333', 1),
     (4, '4번글', '444', NULL);
-
+    
 -- 확인
 .mode column
 SELECT * FROM users;
