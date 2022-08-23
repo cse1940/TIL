@@ -4,7 +4,7 @@ SELECT * FROM users LIMIT 1;
 -- 문자열 합치기 ||
 -- (성+이름) 출력, 5명만
 SELECT 
-    last_name || first_name 이름,
+    last_name || first_name AS 이름,
     age,
     country,
     phone,
