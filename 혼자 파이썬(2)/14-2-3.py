@@ -6,7 +6,7 @@ class Avatar:
         self.skill = skill
 
     def printAvatar(self):
-        print("키는", self.height, "cm", "스킬은", self.skill, "입니다.")
+        print("키는", self.height, "cm,", "스킬은", self.skill, "입니다.")
 
 byunsoo = Avatar()
 byunsoo.setAvatar(120, "점프")

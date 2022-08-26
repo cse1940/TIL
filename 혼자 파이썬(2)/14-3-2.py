@@ -14,3 +14,5 @@ class Avatar:
 
 byunsoo = Avatar()
 byunsoo.printHp()
+
+# setAvatar() 메소드로 객체의 name과 hp를 설정하기 전에 다른 메소드를 호출하여 오류가 발생
