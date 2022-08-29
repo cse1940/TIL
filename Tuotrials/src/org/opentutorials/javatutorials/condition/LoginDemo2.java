@@ -1,0 +1,23 @@
+package org.opentutorials.javatutorials.condition;
+
+public class LoginDemo2 {
+
+	public static void main(String[] args) {
+		// 조건문의 중첩
+		// 아이디와 비밀번호를 모두 검증해야 한다면?
+		 String id = args[0];
+	        String password = args[1];
+	        if (id.equals("egoing")) {
+	            if (password.equals("111111")) {
+	                System.out.println("right");
+	            } else {
+	                System.out.println("wrong");
+	            }
+	 
+	        } else {
+	            System.out.println("wrong");
+	        }
+
+	}
+
+}
