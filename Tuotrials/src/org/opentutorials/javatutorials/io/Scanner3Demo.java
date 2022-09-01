@@ -1,7 +1,9 @@
 package org.opentutorials.javatutorials.io;
 
+// ctrl + shift + O : 필요한 라이브러리 자동으로 만들어줌.
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
-import java.io.*;
 
 public class Scanner3Demo {
 
