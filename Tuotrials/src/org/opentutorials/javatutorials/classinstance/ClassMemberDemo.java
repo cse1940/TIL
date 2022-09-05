@@ -8,7 +8,7 @@ class C1{
     }
     static void static_instance(){
         // 클래스 메소드에서는 인스턴스 변수에 접근 할 수 없다. 
-        //System.out.println(instance_variable);
+        // System.out.println(instance_variable);
     }
     void instance_static(){
         // 인스턴스 메소드에서는 클래스 변수에 접근 할 수 있다.
@@ -49,3 +49,7 @@ public class ClassMemberDemo {
 	}
 
 }
+
+// 인스턴스 변수 : Non-Static Field
+// 클래스 변수 : Static Field
+// Field : 클래스 전역에서 접근할 수 있는 변수
