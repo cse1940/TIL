@@ -4,7 +4,9 @@ class C {
 	int v=10;
 	
 	void m() {
+		int v=20;
 		System.out.println(v);
+		System.out.println(this.v); // 인스턴스 그 자체, 전역번수임.
 	}
 }
 
