@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       other, parent, grand {
+        border: 5px solid tomato;
+       }
+       grand {
+        position: relative;
+       }
+       me {
+        background-color: black;
+        color:white;
+        position: absolute;
+        left:0;
+        top:0;
+        width:200px;
+        height:100px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="other">other</div>
+    <div class="grand">
+    <div class="parent">
+        parent
+        <div class="me">me</div>
+    </div>
+</div>
+</body>
+</html>
