@@ -13,5 +13,5 @@ print("sum(grader)", "=", sum(grades))
 import statistics
 print("statistics.mean(grades)", "=", statistics.mean(grades))
 
-import random
+import random # 0 ~ 1
 print("random.choice(students)", "=", random.choice(students))
