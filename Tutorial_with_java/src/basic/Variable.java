@@ -11,7 +11,7 @@ public class Variable {
 		int intType = 100;
 		double doubleType = 150.5;
 		String stringType = "ÃÖ½ÂÀº";
-		
+		 
 		System.out.println("intType = " + intType);
 		System.out.println("doubleType = " + doubleType);
 		System.out.println("stringType = " + stringType);

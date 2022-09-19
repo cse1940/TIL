@@ -3,7 +3,7 @@ package basic;
 public class Operator {
 	
 	final static int SECOND = 1000;
-
+ 
 	public static void main(String[] args) {
 
 //		초를 입력 받아 몇 분 몇 초인지 계산하는 프로그램
