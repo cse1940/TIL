@@ -6,13 +6,13 @@ public class Operator {
  
 	public static void main(String[] args) {
 
-//		초를 입력 받아 몇 분 몇 초인지 계산하는 프로그램
+//		1. 초를 입력 받아 몇 분 몇 초인지 계산하는 프로그램
 		int minute = SECOND / 60; // 몫
 		int second = SECOND % 60; // 나머지
 		
 		System.out.println("1000s = " + minute + "분" + second + "초");
 		
-// 		++, --을 이용한 프로그램(증감연산자)
+// 		2. ++, --을 이용한 프로그램(증감연산자)
 		int a = 10;
 		System.out.println("현재의 a는 " + a + "입니다.");
 		a++;
@@ -21,7 +21,7 @@ public class Operator {
 		System.out.println("현재의 a는 " + a++ + "입니다.");
 		System.out.println("현재의 a는 " + a + "입니다.");
 		
-//		%연산자를 이용한 프로그램
+//		3. %연산자를 이용한 프로그램
 		System.out.println(1 % 3);
 		System.out.println(2 % 3);
 		System.out.println(3 % 3);
@@ -29,7 +29,7 @@ public class Operator {
 		System.out.println(5 % 3);
 		System.out.println(6 % 3);
 		
-// 		==, >, <, &&, ||, !연산을 이용한 프로그램
+// 		4. ==, >, <, &&, ||, !연산을 이용한 프로그램
 		int b = 50;
 		int c = 50;
 		

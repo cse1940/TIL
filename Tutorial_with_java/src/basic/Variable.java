@@ -7,7 +7,7 @@ public class Variable {
 
 	public static void main(String[] args) {
 
-//		변수		
+//		1. 변수		
 		int intType = 100;
 		double doubleType = 150.5;
 		String stringType = "최승은";
@@ -16,16 +16,16 @@ public class Variable {
 		System.out.println("doubleType = " + doubleType);
 		System.out.println("stringType = " + stringType);
 		
-//		상수
+//		2. 상수
 		int r = 30;
 		System.out.println("원의 반지름 = " + r * r * PI);
 		
-//		overflow		
+//		3. overflow		
 		int a = INT_MAX;
 		System.out.println("a = " + a);
 		System.out.println("a+1 = " + (a+1));
 		
-//		사칙연산
+//		4. 사칙연산
 		int b = 1;
 		int c = 2;
 		System.out.println("b+c = " + (b+c));
