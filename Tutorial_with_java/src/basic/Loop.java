@@ -35,6 +35,16 @@ public class Loop {
 				System.out.println();
 			}
 		}
+
+//		4. 무한 루프
+		int count = 0;
+		for(;;) {
+			System.out.println("출력");
+			count++;
+			if(count == 10) {
+				break;
+			}
+		}
 	}
 
 }
