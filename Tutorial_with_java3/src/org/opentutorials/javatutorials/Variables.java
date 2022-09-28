@@ -1,4 +1,4 @@
-package org.opentutorials.javatutorials.eclipse;
+package org.opentutorials.javatutorials;
 
 public class Variables {
 
