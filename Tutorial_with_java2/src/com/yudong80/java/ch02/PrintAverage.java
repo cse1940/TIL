@@ -1,6 +1,6 @@
 package com.yudong80.java.ch02;
 
-public class HomeWork {
+public class PrintAverage {
 
 	public static void main(String[] args) {
 
