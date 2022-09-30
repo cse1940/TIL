@@ -63,8 +63,8 @@ public class CarExampleV1 {
 	public static void main(String[] args) {
 		
 		Car car = new Car("GREEN");
-		car.start();
-		car.accelerate();
+		car.start(); // 10
+		car.accelerate(); // 20
 		car.accelerate(70);
 		car.decelerateAs(60);
 		car.decelerateHalf();
