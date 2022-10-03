@@ -39,7 +39,7 @@ public class PersonExampleV5 {
 		System.out.println(getKoreanName(firstName, lastName) + "님이 " + destination + "로 출근합니다.");
 	}
 	
-	public String getPlace() {
+	public String getPlace() { 
 		return destination;
 	}
 	
