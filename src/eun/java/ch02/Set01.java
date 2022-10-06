@@ -27,7 +27,7 @@ public class Set01 {
 //		Set<Integer> s3 = s1; -> error
 		Set<Integer> s3 = new HashSet<>(s1);
 		
-		System.out.println(s3.retainAll(s2));
+		System.out.println(s3.retainAll(s2)); // retainAll : 두 배열 데이터에서 교집합을 수행 -> s3 배열 기준으로 s2 배열 교집합 수행
 		System.out.println("s1 : " + s1);
 		System.out.println("s2 : " + s2);
 		System.out.println("교집합 s3 : " + s3);
@@ -35,13 +35,13 @@ public class Set01 {
 //		합집합
 		s3.clear(); // 초기화
 		s3 = new HashSet<>(s1);
-		s3.addAll(s2);
+		s3.addAll(s2); // addAll : 데이터를 통째로 붙임 -> s3 배열 기준으로 s2 배열 합집합 수행
 		System.out.println("합집합 s3 : " + s3);
 		
 //		차집합
 		s3.clear(); // 초기화
 		s3 = new HashSet<>(s1);
-		s3.removeAll(s2);
+		s3.removeAll(s2); // removeAll : 데이터를 통째로 삭제함 -> s3 배열 기준으로 s2 배열 차집합 수행
 		System.out.println("s1 : " + s1);
 		System.out.println("s2 : " + s2);
 		System.out.println("차집합 s3 : " + s3);
