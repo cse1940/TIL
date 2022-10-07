@@ -12,7 +12,7 @@ public class ReturnDemo {
 	public static void printScore(int score) {
 		if(score < 0 || score > 100) {
 			System.out.println("0 미만 또는 100 초과 " + score);
-			return;
+			return; // 해당 함수를 종료
 		}
 		System.out.println("0 ~ 100 사이" + score);
 	}
