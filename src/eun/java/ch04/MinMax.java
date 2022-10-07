@@ -41,7 +41,7 @@ public class MinMax {
 		int count = 0;
 		for(int i=0; i<randomAry10.length; i++) {
 			count += randomAry10[i];
-			if(count > 100) {
+			if(count > 300) {
 				System.out.println("현재까지의 합은 " + count + ", index는 " + i);
 				break;
 			}
