@@ -12,7 +12,7 @@ public class MethodDemo04 {
 		int[] ary1 = {1, 2, 3, 4, 5};
 		int[] ary2 = ary1;
 		ary2[0] = 1000;
-//		ary1[0]은 바뀌었을까? 네
+//		ary1[0]은 바뀌었을까? 네 
 
 	}
 
