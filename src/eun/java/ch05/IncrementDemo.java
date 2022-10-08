@@ -7,7 +7,7 @@ public class IncrementDemo {
 		int x = 0;
 		System.out.println("호출 전 x의 값은 " + x + "입니다.");
 		increment(x);
-		System.out.println("호출 후 x의 값은 " + x + "입니다.");
+		System.out.println("호출 후 x의 값은 " + x + "입니다."); 
 		
 
 	}
