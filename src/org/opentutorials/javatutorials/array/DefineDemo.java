@@ -11,4 +11,4 @@ public class DefineDemo {
 //		classGroup : 배열이 담길 변수의 이름
 	}
 
-}
+} 
