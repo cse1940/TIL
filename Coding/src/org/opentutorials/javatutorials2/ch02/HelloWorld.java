@@ -1,4 +1,4 @@
-package com.eun.java;
+package org.opentutorials.javatutorials2.ch02;
 
 public class HelloWorld {
 
