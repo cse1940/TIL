@@ -4,7 +4,7 @@ public class MethodDemo1 {
 
 	public static void main(String[] args) {
 		
-//		메소드 numbering의 로직이 실행됨
+//		메소드 numbering의 로직이 실행됨  
 		numbering(); 
 
 	}
