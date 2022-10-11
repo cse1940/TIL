@@ -1,4 +1,4 @@
-package com.seung.eun.java.ch02;
+package com.eun.java;
 
 public class HelloWorld {
 
