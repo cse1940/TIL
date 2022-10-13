@@ -1,4 +1,4 @@
-package org.opentutorials.javatutorials.Inheritance.example3;
+package org.opentutorials.javatutorials.Inheritance.example3; 
  
 class Calculator {
     int left, right;
