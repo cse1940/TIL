@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel-items {
+            display: flex;
+            width: 50rem;
+        }
+        .carousel-item {
+            width: 10rem;
+            height: 10rem;
+            background-color: bisque;
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel-items">
+        <div class="carousel-item active">1</div>
+        <div class="carousel-item">2</div>
+    </div>
+    <button class="nextBtn">next</button>
+
+    <script>
+        const nextBtn = document.querySelector("#nextBtn")
+        nextBtn.addEventListener("click", function() {
+            // 지금 active인 것은 어떻게 알까?
+            const currentElement = document.querySelector(".active")
+            // 전체 item 중에.. 이 Element의 인덱스?
+            const items = document.querySelectorAll(".carousel-item")
+            const idx = [...items].indexOf(currentElement)
+            console.log(currentElement, items)
+            currentElement.classList.toggle("active")
+            items[idx+1].classList.toggle("active")
+        })
+    </script>
+</body>
+</html>
