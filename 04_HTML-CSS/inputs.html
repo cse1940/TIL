@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 폼 만들기</title>
+</head>
+<body>
+    <h1>입사 지원서</h1>
+
+    <h2>필수 정보</h2>
+    <!-- div, 태그를 묶는 놈! 하나의 블럭 처리가 됨!-->
+    <div>
+        <label>이름</label>
+        <input type="text">
+    </div>
+
+    <div>
+        <label>생년월일</label>
+        <input type="date">
+    </div>
+
+    <div>
+        <label>성별</label>
+        <select name="" id="">
+            <option value="">남성</option>
+            <option value="">여성</option>
+        </select>
+    </div>
+
+    <h2>개발자가 되고 싶은 이유는 무엇인가요?</h2>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <h2>사용해본 것들은 무엇인가요?</h2>
+    <div><input type="checkbox">Java</div>
+    <div><input type="checkbox">Python</div>
+    <div><input type="checkbox">C언어</div>
+    <div><input type="checkbox">HTML/CSS</div>
+    <div><input type="checkbox">JS</div>
+    <div><input type="checkbox">SQL</div>
+    <div><input type="checkbox">DB</div>
+
+    <h2>희망 부서</h2>
+    <div><input type="radio" name="team">프론트엔드</div>
+    <div><input type="radio" name="team">백엔드</div>
+    <div><input type="radio" name="team">데이터베이스</div>
+</body>
+</html>
