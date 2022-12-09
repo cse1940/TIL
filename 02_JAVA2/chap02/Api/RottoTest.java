@@ -22,6 +22,6 @@ public class RottoTest {
             picked[i] = numbers.get(i);
         }
 
-        System.out.printf("자동 생성 번호: %s", Arrays.toString(picked));
+        System.out.printf("자동 생성 번호: %s\n", Arrays.toString(picked));
     }
 }
