@@ -10,7 +10,7 @@ console.log(openBox);
 openBox = "바둑이";
 console.log(openBox);
 
-// 2. 이름이 같은 변수, 생성 불가!
+// 2. 이름이 같은 변수, 생성 불가! 
 // let openBox = "도너츠";
 openBox = "도너츠";
 console.log(openBox);
