@@ -6,7 +6,7 @@ console.log(birthYear);
 
 const weight = 75.24; // 실수(float)
 console.log(weight);
-
+ 
 // 2. string, 여러개의 문자들
 const nickname = "최승은";
 const starSign = '천징자리';
