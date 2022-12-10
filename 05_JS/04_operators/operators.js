@@ -13,7 +13,7 @@ console.log(`🍌바나나 개당 가격: ${banana}원`);
 // 3. 산술 연산, 기초 산수!
 // 🍓 + 🥝 - 🍌 = ?
 const result1 = strawberry + kiwi - banana;
-console.log(result1);
+console.log(result1); 
 
 // 5 x 🍓 ÷ 🍌 = ?
 const result2 = 5 * strawberry / banana;
